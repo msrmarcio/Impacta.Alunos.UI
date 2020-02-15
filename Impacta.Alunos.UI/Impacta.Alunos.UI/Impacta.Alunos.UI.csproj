@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B06FCE3D-E5AF-4B30-8E17-01619DAE01F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Impacta.Alunos.UI</RootNamespace>
+    <AssemblyName>Impacta.Alunos.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enumeradores.cs" />
+    <Compile Include="frmCadastroVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileClass.designer.cs">
+      <DependentUpon>frmCadastroVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalculadora.Designer.cs">
+      <DependentUpon>frmCalculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEscalacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEscalacao.Designer.cs">
+      <DependentUpon>frmEscalacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaClientes.Designer.cs">
+      <DependentUpon>frmListaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpider.Designer.cs">
+      <DependentUpon>FrmSpider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="MetodosDeExtensao.cs" />
+    <Compile Include="OrientacaoObjetos\frmOrientacaoObjetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrientacaoObjetos\frmOrientacaoObjetos.Designer.cs">
+      <DependentUpon>frmOrientacaoObjetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrientacaoObjetos\Aviao.cs" />
+    <Compile Include="OrientacaoObjetos\Caminhao.cs" />
+    <Compile Include="OrientacaoObjetos\Carro.cs" />
+    <Compile Include="frmFreteLab_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFreteLab_04.Designer.cs">
+      <DependentUpon>frmFreteLab_04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobre.Designer.cs">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrientacaoObjetos\ICadastro.cs" />
+    <Compile Include="OrientacaoObjetos\ICarro.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OrientacaoObjetos\Veiculo.cs" />
+    <Compile Include="Veiculo.cs" />
+    <Compile Include="VeiculoBasico.cs" />
+    <EmbeddedResource Include="FileClass.resx">
+      <DependentUpon>frmCadastroVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalculadora.resx">
+      <DependentUpon>frmCalculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEscalacao.resx">
+      <DependentUpon>frmEscalacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFreteLab_04.resx">
+      <DependentUpon>frmFreteLab_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaClientes.resx">
+      <DependentUpon>frmListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSobre.resx">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpider.resx">
+      <DependentUpon>FrmSpider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrientacaoObjetos\frmOrientacaoObjetos.resx">
+      <DependentUpon>frmOrientacaoObjetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Cancel_1493282.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_profle_1055000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_cross_delete_remove_close_5402366.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
